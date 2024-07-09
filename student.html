@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Login/Register</h1>
+    <form id="studentLoginForm">
+        <input type="email" id="studentEmail" placeholder="Email" required>
+        <input type="password" id="studentPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <h2>Or Register</h2>
+    <form id="studentRegisterForm">
+        <input type="text" id="studentName" placeholder="Name" required>
+        <input type="email" id="studentRegisterEmail" placeholder="Email" required>
+        <input type="password" id="studentRegisterPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="teacherList" style="display: none;">
+        <h2>Available Teachers</h2>
+        <ul id="teachersList">
+            <!-- List of teachers will be displayed here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('studentLoginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Validate login details (this part needs backend integration)
+            alert('Logged in as Student!');
+            document.getElementById('studentLoginForm').style.display = 'none';
+            document.getElementById('studentRegisterForm').style.display = 'none';
+            document.getElementById('teacherList').style.display = 'block';
+
+            // Fetch and display teacher list (this part needs backend integration)
+            let teachersList = document.getElementById('teachersList');
+            for (let i = 0; i < 5; i++) {
+                let li = document.createElement('li');
+                li.innerHTML = `Teacher ${i+1} 
+                    <button onclick="bookAppointment(${i+1})">Book Appointment</button>`;
+                teachersList.appendChild(li);
+            }
+        });
+
+        document.getElementById('studentRegisterForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Register student (this part needs backend integration)
+            alert('Registered as Student!');
+        });
+
+        function bookAppointment(teacherId) {
+            alert(`Booked appointment with Teacher ${teacherId}`);
+        }
+    </script>
+</body>
+</html>

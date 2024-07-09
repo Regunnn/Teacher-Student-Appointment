@@ -1,0 +1,28 @@
+Hi, Iam Rehan Khan. 
+
+Due to technical problems and my low end laptop, I couldn't work on the project properly.
+I have done the best I can with this project's architecture and design with basic styling but enough functionalities.
+I have tried using firebase database, but due to lag in my laptop I couldn't work properly on the scalable project.
+I have created the GitHub repo and uploaded the html, css and javascript codes(which only I was able to complete due to technical errors).
+I have given the design architecture of the system in pdf format.
+
+
+
+Execution
+1. Web page starts with a login option for admin, teacher and student(index.html).
+2. Press the required button.
+
+3. If pressed admin- The admin portal will open(admin.html).
+4. You will be able to login and then update or add teacher login details.
+
+5. If pressed teacher- The teacher portal will open(teacher.html).
+6. You will be able to login with the details and then will be able to accept incoming student appointment requests.
+
+7. If pressed student- The student portal will open(student.html).
+8. Login or Register with credentials and once entered you will be able to see a list of teachers with whom you can 
+   book appointments if u wish to with that particular teacher.
+
+9. These details can be considered as stored in the database as the service provided will work as if the details are getting stored.
+10. The css styling is minimal but functionalities are extended to work as intended.
+
+Note: Due to low end system, I had to reduce css styling so that js functionalities can be done without errors.

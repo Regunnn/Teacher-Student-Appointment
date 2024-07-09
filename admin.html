@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Admin Portal</h1>
+    <form id="addTeacherForm">
+        <input type="text" id="teacherName" placeholder="Teacher Name" required>
+        <input type="email" id="teacherEmail" placeholder="Teacher Email" required>
+        <button type="submit">Add Teacher</button>
+    </form>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('addTeacherForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add teacher details to the database (this part needs backend integration)
+            alert('Teacher added!');
+        });
+    </script>
+</body>
+</html>
